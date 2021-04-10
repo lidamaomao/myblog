@@ -10,6 +10,11 @@ module.exports = {
       },
     ],
   ],
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+    },
+  },
   themeConfig: {
     type: 'blog',
     subSidebar: 'auto',
