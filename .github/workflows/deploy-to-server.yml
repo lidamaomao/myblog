@@ -22,12 +22,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2.0.0
 
       # Runs a single command using the runners shell
       - name: Install Dependencies
         run:
-          yarn
-          yarn build
+          pnpm install
+          pnpm build
 
       # Runs a set of commands using the runners shell
       - name: Deploy to Server
