@@ -5,6 +5,7 @@ categories:
   - Linux
 tags:
   - Zabbix
+  - PHP
 ---
 
 因为 Zabbix 所有的数据库操作方法，都写在 `/include/db.inc.php` 文件中，所以主要修改也都集中在这个文件里。
