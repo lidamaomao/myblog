@@ -34,7 +34,7 @@ jobs:
       - name: Run build
         run: pnpm build
       - name: ls dir
-        run: ll -ah
+        run: ls -al
 
       # Runs a set of commands using the runners shell
       - name: Deploy to Server
