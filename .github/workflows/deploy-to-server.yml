@@ -30,10 +30,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Install Dependencies
-        run: |
-          pnpm install
-          pnpm build
-          ll -ah
+        run: pnpm install
+      - name: Run build
+        run: pnpm build
+      - name: ls dir
+        run: ll -ah
 
       # Runs a set of commands using the runners shell
       - name: Deploy to Server
