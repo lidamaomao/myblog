@@ -39,7 +39,7 @@ jobs:
         uses: easingthemes/ssh-deploy@v2.1.6
         env:
           SSH_PRIVATE_KEY: ${{ secrets.MYWIN10WSL2 }}
-          ARGS: "-rltgoDzvO --delete"
+          ARGS: "-avzr --delete"
           SOURCE: "docs/.vuepress/dist/"
           REMOTE_HOST: ${{ secrets.HOST }}
           REMOTE_USER: ${{ secrets.USER }}
