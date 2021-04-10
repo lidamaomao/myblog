@@ -35,7 +35,7 @@ jobs:
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.6
         env:
-          SSH_PRIVATE_KEY: ${{MYWIN10WSL2}}
+          SSH_PRIVATE_KEY: ${{ secrets.MYWIN10WSL2 }}
           ARGS: "-rltgoDzvO --delete"
           SOURCE: "docs/.vuepress/dist"
           REMOTE_HOST: ${{ secrets.HOST }}
